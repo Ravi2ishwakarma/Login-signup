@@ -1,79 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/951e007d74.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="container">
-        <div class="one">
-            <div class="one1">
-                <div class="rec"></div>
-                <div class="text"><b>Let's Make <br> it Happen <br> Together</b></div>
-            </div>
-            <div class="one2">
-                <div class="c1">
-                    <div class="c2">
-                        <div class="c3">
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background:radial-gradient(rgba(72, 72, 184, 0.8),rgba(30, 5, 65, 0.856));
+}    
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap:wrap;
+}
+.one{
+    width: 50%;
+    height: 100%;
+}
+.two{
+    width: 50%;
+    height: 100%;
+}
+.one1{
+    height: 50%;
+    width: 100%;
+    
+}
+.one2{
+    height: 50%;
+    width: 100%;
+}
+.rec{
+    margin-left: 45%;
+    height: 80px;
+    width: 30px;
+    background-color: rgb(226, 163, 86);
+}
+.text{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.c1{
+    margin: 5% 0 0 15%;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background-color: rgba(133, 141, 184, 0.438);
+    display: flex;
+    justify-content: center;
+}
+.c2{
+    margin-top: 6%;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-color: rgb(199, 162, 108);
+    display: flex;
+    justify-content: center;
+}
+.c3{
+    margin-top: 8%;
+    width: 235px;
+    height: 235px;
+    border-radius: 50%;
+    background-color: rgb(189, 182, 173);
+}
+.two1{
+    margin-top: 30px;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+.two1 h1{
+    color: rgb(202, 148, 82);
+}
+.two1 a{
+    text-decoration: none;
+    color: rgb(190, 139, 77);
+}
+.two{
+    color: aliceblue;
+}
+.two h2{
+ margin-top: 50px;   
+ font-size: 35px;
+ font-weight: 700;
+}
+.name{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+.email{
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;    
+}
+.pass{
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+}
+.two2 input{
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.terms{
+    margin-top: 15px;
+}
+.terms a{
+    color:  rgb(190, 139, 77);
+}
+.terms input{
+    height: 17px;
+    width: 17px;
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="two">
-            <div class="two1">
-                <h1>CO.</h1>
-                <p>Already have an account?<a href="login.html">Sign in here!</a></p>
-            </div>
-            <h2>Create An Account</h2>
-            <form onsubmit="myfun()">
-                <div class="two2">
-                    <div class="name">
-                     <div><p>First Name</p>
-                         <input type="text"  required ="" id="">
-                     </div>
-                     <div>
-                         <p>Last Name</p>
-                         <input type="text" required name="" id="">
-                     </div>
-                    </div>
-                    <div class="email">
-                     <div><p>Email</p>
-                         <input type="email" required name="" id="">
-                     </div>
-                     <div>
-                         <p>Address</p>
-                         <input type="text" required name="" id="">
-                     </div>
-                    </div>
-                    <div class="pass">
-                     <div><p>Create Password</p>
-                         <input id="password" type="password" required name="" id="">
-                     </div>
-                     <div>
-                         <p>Confirm Password</p>
-                         <input id="cpassword" type="password" required name="" id="">
-                     </div>
-                    </div>
-                    <p class="terms"><input type="checkbox" required name="" id=""> Create your account and you accepting <a href="#">Terms & Conditions.</a></p>
-                    <button class="create">Create Account</button>
-                        <div class="another">
-                     <div>
-                         <button><a href="#"><i class="fa-brands fa-facebook-f"></i> Create with facebook</a></button>
-                     </div>
-                     <div>
-                         <button><a href="#"><i class="fa-brands fa-twitter"></i> Create with twitter</a></button>
-                     </div>
-                    </div>
-                    <p class="footer">copyright 2030 company Lne lock</p>
-                 </div>
-            </form>
-        </div>
-    </div>
-<script src="script.js"></script>    
-</body>
-</html>
+}
+.create {
+    margin-top: 20px;
+    background-color: rgb(196, 158, 112);
+    color: aliceblue;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+.another{
+    margin-top: 10px;
+    display: flex; 
+    gap: 20px;
+}
+.another button{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+.another button i{
+    color: blue;
+    font-size: 1rem;
+}
+ button a{
+    text-decoration: none;
+    color: black;
+}
+.footer{
+    margin-top: 50px;
+}
+@media (max-width:400px) {
+    .container{
+        display: grid;
+        text-align: center;
+    }
+    .name{
+    
+        text-align: center;
+        display: grid;
+    }
+    .email{
+
+        text-align: center;
+        display: grid;
+    }
+    .pass{
+
+        text-align: center;
+        display: grid;
+    }
+    .another{
+    
+        text-align: center;
+        display: grid;
+    }
+    .text{
+        margin-left: 50%;
+    }
+    .two2{
+        margin-left: 40%;
+    }
+}
